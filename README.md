@@ -12,9 +12,9 @@ Project aim is to implement a collection of tests for a working application (to-
         - [x] Testing getting the value from the body
         - [x] Testing saving the categories
     - [x] Create And Serve A To-Do Item Form
-    - [ ] Save And Show To-Do Items
-        - [ ] Testing the merge items method
-        - [ ] Testing the save items method
+    - [x] Save And Show To-Do Items
+        - [x] Testing the merge items method
+        - [x] Testing the save items method
     - [ ] Show And Complete A To-Do Item
     - [ ] Search For To-Do Items
 - Refactor to use a template engine
