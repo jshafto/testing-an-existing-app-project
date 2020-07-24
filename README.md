@@ -18,9 +18,9 @@ Project aim is to implement a collection of tests for a working application (to-
     - [x] Show And Complete A To-Do Item
     - [x] Search For To-Do Items
 - Refactor to use a template engine
-    - [ ] Install handlebars
-    - [ ] Change merge items test
-    - [ ] Fix merge items function
-    - [ ] Change merge categories tests
-    - [ ] Fix merge categories function
-    - [ ] Change HTML
+    - [x] Install handlebars
+    - [x] Change merge items test
+    - [x] Fix merge items function
+    - [x] Change merge categories tests
+    - [x] Fix merge categories function
+    - [x] Change HTML

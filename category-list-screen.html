@@ -33,7 +33,9 @@
         </fieldset>
       </form>
       <ul>
-        <!-- Content here -->
+        {{#each categories}}
+        <li>{{ this }}</li>
+        {{/each}}
       </ul>
     </section>
   </main>

@@ -33,7 +33,9 @@
 
           <label for="category">Category</label>
           <select name="category">
-            <!-- Content here -->
+            {{#each categories}}
+              <option>{{ this }}</option>
+            {{/each}}
           </select>
 
           <button type="submit" class="pure-button pure-button-primary">Add item</button>
