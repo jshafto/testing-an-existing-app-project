@@ -6,7 +6,7 @@ Project aim is to implement a collection of tests for a working application (to-
 
 ## Steps
 - Tests to write:
-    - [ ] Create And Serve the Category Screen
+    - [x] Create And Serve the Category Screen
     - [ ] Save Submitted Category Information
         - [ ] Testing getting the body from the request
         - [ ] Testing getting the value from the body

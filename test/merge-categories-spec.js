@@ -12,14 +12,50 @@ describe("mergeCategories()", () => {
     `;
 
     it("should return no <li>s for no categories", () => {
+      // arrange
+      let categories = [];
+      // act
+      let test = mergeCategories(template, categories, 'li');
+      // assert
+      expect(test).to.have.string('<div>');
+      expect(test).to.have.string('</div>');
+      expect(test).to.have.string('<ul>');
+      expect(test).to.have.string('</ul>');
+      expect(test).to.not.have.string('<li>');
+      expect(test).to.not.have.string('</li>');
+      expect(test).to.not.have.string('<!-- Content here -->');
     });
 
     it("should return a single <li> for one category", () => {
-      expect.fail('please write this test');
+      // arrange
+      let categories = ['pizza'];
+      // act
+      let test = mergeCategories(template, categories, 'li');
+      // assert
+      expect(test).to.contain('<div>');
+      expect(test).to.contain('</div>');
+      expect(test).to.contain('<ul>');
+      expect(test).to.contain('</ul>');
+      expect(test).to.contain(`<li>${categories[0]}</li>`);
+      expect(test).to.not.contain('<!-- Content here -->');
     });
 
     it("should return an <li> for each category", () => {
-      expect.fail('please write this test');
+      // arrange
+      let categories = ['bunny', 'dog', 'mata mata turtle'];
+
+      // act
+      let test = mergeCategories(template, categories, 'li');
+
+      // assert
+      expect(test).to.contain('<div>');
+      expect(test).to.contain('</div>');
+      expect(test).to.contain('<ul>');
+      expect(test).to.contain('</ul>');
+      categories.forEach(el => {
+        expect(test).to.contain(`<li>${el}</li>`);
+      });
+      expect(test).to.not.contain('<!-- Content here -->')
     });
   });
 
