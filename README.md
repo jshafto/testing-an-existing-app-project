@@ -7,9 +7,9 @@ Project aim is to implement a collection of tests for a working application (to-
 ## Steps
 - Tests to write:
     - [x] Create And Serve the Category Screen
-    - [ ] Save Submitted Category Information
-        - [ ] Testing getting the body from the request
-        - [ ] Testing getting the value from the body
+    - [x] Save Submitted Category Information
+        - [x] Testing getting the body from the request
+        - [x] Testing getting the value from the body
     - [ ] Create And Serve A To-Do Item Form
     - [ ] Save And Show To-Do Items
         - [ ] Testing the merge items method
